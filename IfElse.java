@@ -28,8 +28,14 @@ class IfElse{
 		  if(AddNumber == AddNumberUser && courseStudent==CourseStudentUser && studentName==StudentNameUser ){
 			  System.out.println("Enter your fee");
 			  inputAmount =sc.nextLong();
+			  if(inputAmount>=1 && inputAmount>=Amount){			  
+			  
 			  Amount=Amount-inputAmount;
 			  System.out.println("your are depostie fee "+inputAmount+" less fee"+Amount);
+			  }
+			  else{
+				  System.out.println(Amount+"plz enter you amount");
+			  }
 		  }
 		  else
 		  {
